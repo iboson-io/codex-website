@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://iboson-io.github.io/reyo-website/sitemap.xml
