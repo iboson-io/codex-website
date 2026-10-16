@@ -1,7 +1,16 @@
-# Codex website
+# reyo.dev website
 
-The product website for Codex by iboson, served by GitHub Pages from `main`.
+The product website for Reyo by iBoson, served by GitHub Pages from the root of `main`.
 
-It is one static page (`index.html`) with no build step. Edit it and push; Pages redeploys in about a minute.
+This repository holds **built files only**. The source is the Vite/React project in `website/` of the
+Code-Quality-Analyzer repository. To change the site, edit it there, then:
 
-Every product claim on the page was checked against the Codex source on 12 October 2026 (824 rules, 34 languages). Re-check a number before changing it.
+```bash
+pnpm install --frozen-lockfile
+pnpm build
+node tests/interactions.mjs
+```
+
+and replace everything here except `.nojekyll` and this README with the contents of `website/dist/`.
+The build uses relative asset paths (`base: './'`), so it works both here under `/codex-website/` and
+at a domain root.
