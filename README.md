@@ -12,5 +12,5 @@ node tests/interactions.mjs
 ```
 
 and replace everything here except `.nojekyll` and this README with the contents of `website/dist/`.
-The build uses relative asset paths (`base: './'`), so it works both here under `/codex-website/` and
+The build uses relative asset paths (`base: './'`), so it works both here under `/reyo-website/` and
 at a domain root.
